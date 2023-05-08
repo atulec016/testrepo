@@ -5,5 +5,5 @@ on:
 
 jobs:
   create_tag:
-    name: Databricks_deploy
+    name: create_tag
     uses: atulec016/central_call/.github/workflows/tag.yml@main
