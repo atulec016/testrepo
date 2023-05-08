@@ -1,0 +1,9 @@
+name: auto tag workflow
+
+on:
+ workflow_dispatch:
+
+jobs:
+  create_tag:
+    name: Databricks_deploy
+    uses: atulec016/central_call/.github/workflows/tag.yml@main
