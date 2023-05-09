@@ -1,3 +1,3 @@
 # testrepo
 tst
-# code tasting
+# code testing
