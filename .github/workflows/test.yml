@@ -1,9 +1,9 @@
 name: test_yaml
 
 on:
-  push:
-    tags:
-     - '*'
+ push:
+  tags:
+   - '*'
 
 jobs:
   command_test:
