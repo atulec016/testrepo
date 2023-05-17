@@ -7,9 +7,7 @@ on:
   workflow_dispatch:
       
 jobs:
-  command_test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Code check for commit and update the branch
-        run: |
-          echo "Tis is test YAml"
+  create_tag:
+    name: create_tag
+    uses: atulec016/central_call/.github/workflows/test.yml@main
+
