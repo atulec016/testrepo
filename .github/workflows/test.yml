@@ -1,0 +1,22 @@
+name: test_yaml
+
+on:
+  push:
+    tags:
+     - "*"
+  workflow_dispatch:
+
+jobs:
+  command_test:
+    runs-on: ubuntu-latest
+    environment: 
+      name: dev
+    steps:
+      - name: Checkout branch "main"
+        uses: actions/checkout@v3
+        with:
+          ref: 'main'
+          fetch-depth: 0
+      - name: Code check for commit and update the branch
+        run: |
+          echo "Tis is test YAml"
