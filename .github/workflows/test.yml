@@ -3,7 +3,7 @@ name: test_yaml
 on:
   push:
     tags:
-      - "*"
+      - 20*
       
 jobs:
   command_test:
