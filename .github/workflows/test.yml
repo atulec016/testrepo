@@ -3,7 +3,7 @@ name: test_yaml
 on:
   push:
     tags:
-     - "*"
+     - '*'
   workflow_dispatch:
 
 jobs:
