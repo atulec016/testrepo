@@ -1,9 +1,10 @@
 name: test_yaml
 
-on:
+on: 
   push:
-    tags:
-      - 20*
+    tags: 
+      - '*'
+  workflow_dispatch:
       
 jobs:
   command_test:
