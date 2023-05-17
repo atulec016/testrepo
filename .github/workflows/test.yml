@@ -1,10 +1,10 @@
 name: test_yaml
 
 on:
- create:
-  tags:
-   - '*'
-
+  push:
+    tags:
+      - "*"
+      
 jobs:
   command_test:
     runs-on: ubuntu-latest
