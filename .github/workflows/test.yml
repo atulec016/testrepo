@@ -1,7 +1,7 @@
 name: test_yaml
 
 on: 
-  push:
+  create:
     tags: 
       - '*'
   workflow_dispatch:
