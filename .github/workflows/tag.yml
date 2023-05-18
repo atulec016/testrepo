@@ -8,4 +8,4 @@ jobs:
     name: create_tag
     uses: atulec016/central_call/.github/workflows/tag_new.yml@main
     secrets:
-      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+      GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
