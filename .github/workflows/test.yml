@@ -1,15 +1,21 @@
-name: test_yaml
+name: Upload Files to S3
 
-on: 
+on:
   push:
-    tags: 
-      - '*'
-  workflow_dispatch:
-      
-jobs:
-  create_tag:
-    name: create_tag
-    uses: atulec016/central_call/.github/workflows/test.yml@main
-    secrets:
-      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
 
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: list command
+      run: |
+        ls -alt ${{ github.workspace }}
+
+    - name: Install AWS CLI
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y awscli
