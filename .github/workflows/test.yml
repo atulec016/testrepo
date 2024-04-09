@@ -14,6 +14,7 @@ jobs:
     - name: list command
       run: |
         ls -alt ${{ github.workspace }}
+        cat ${{ github.workspace }}/test/atul.txt
 
     - name: Install AWS CLI
       run: |
